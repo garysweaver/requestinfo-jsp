@@ -5,9 +5,7 @@ A simple Java webapp called "requestinfo" that outputs information about the req
 
 ### Technical Detail
 
-It is basically just the scriptlet:
-
-    <%= request %>
+It is basically just a scriptlet that outputs request information in plain text.
 
 The precompiled version uses JSPC to precompile this to make it just a little bit faster on first hit. This was compiled in Java 1.4 to hopefully be compatible with most environments. If you have any trouble with the precompiled JSP, use the war without precompiled JSP download.
 
