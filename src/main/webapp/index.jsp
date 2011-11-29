@@ -1,4 +1,5 @@
-AuthType: <%= request.getAuthType() %>
+<%@page contentType="text/plain" pageEncoding="UTF-8"
+%>AuthType: <%= request.getAuthType() %>
 ContextPath: <%= request.getContextPath() %>
 Cookies:
 <%
@@ -13,10 +14,10 @@ for (int i=0; i<cookies.length; i++) {
   Secure: <%= cookie.getSecure() %>
   Value: <%= cookie.getValue() %>
   Version: <%= cookie.getVersion() %>
-
 <%
      }
 %>
+
 Headers:
 <%
 for (java.util.Enumeration headers = request.getHeaderNames(); headers.hasMoreElements();) {
